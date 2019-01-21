@@ -25,7 +25,7 @@ $(function() {
 
 
   function runpeer() {
-    peer = new Peer(randomid, { host: 'https://azhar-peerjs.herokuapp.com/', port: 80, path: '/' });
+    peer = new Peer(randomid, { host: 'azhar-peerjs.herokuapp.com', port: 80, path: '/' });
     peer.on('open', function(id) {
       console.log('My peer ID is: ' + id);
       if($("#qrcode").length){
